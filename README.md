@@ -12,7 +12,7 @@ const myFontAwesomeId = 'a23509723';
 const icon = new FullScreenIcon(myFontAwesomeId).top(20).right(20).color('yellow').size(30);
 ```
 
-You will now have a fullscreen icon in the top right hand corner of your page
+You will now have a yellow fullscreen icon in the top right hand corner of your page 30px in size.
 
 The package adds a script pointing to the font awesome cdn to the head of your document.
 
