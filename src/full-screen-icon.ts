@@ -56,6 +56,14 @@ export class FullScreenIcon {
         return this;
     }
 
+    public show(): void {
+        this.iconTag.style.display = 'block';
+    }
+
+    public hide(): void {
+        this.iconTag.style.display = 'none';
+    }
+
     // <script src="https://kit.fontawesome.com/a3008030ac.js" crossorigin="anonymous"></script>
     private createScriptTag(): void {
         this.scriptTag = document.createElement('script');
@@ -70,6 +78,7 @@ export class FullScreenIcon {
 
     private styleIcon(): void {
         this.iconTag.style.position = 'fixed';
+        this.iconTag.style.display = 'block';
         this.size(FullScreenIcon.DEFAULT_SIZE).color(FullScreenIcon.DEFAULT_COLOR);
     }
 
